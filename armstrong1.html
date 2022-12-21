@@ -1,0 +1,21 @@
+<script>
+//WAP to check a 3-digit number is armstrong or not
+var no=prompt();
+var sum=0,rem;
+var temp=no;
+document.write("No = "+no+"<br>");
+
+while(no>0)
+{
+    rem = no%10;
+    sum = sum+ (rem*rem*rem);
+    no =parseInt( no/10);
+}
+if(sum==temp)
+{
+    document.write(" No. is armstrong");
+}
+else {
+    document.write("No. is not armstrong");
+}
+</script>

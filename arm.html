@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    // var no = 153;
+    // var no = prompt();
+    // var ld, sum = 0;
+    // var tn = no;
+    // while (no > 0) {
+    //     ld = no % 10;
+    //     sum = sum + (ld * ld * ld);
+    //     no = parseInt(no / 10);
+    // }
+    // if (sum == tn) {
+    //     // document.write("no is arm");
+    //     alert("no is arm");
+    // }
+    // else {
+    //     // document.write("no is not arm");
+    //     alert("no is not arm");
+    // }
+
+    // Second method using predefined method Math
+    var no = prompt();
+    var ld, sum = 0;
+    var tn = no;
+    while (no > 0) {
+        ld = no % 10;
+        sum = sum + Math.pow(ld, 3);
+        no = parseInt(no / 10);
+    }
+    if (sum == tn) {
+        // document.write("no is arm");
+        alert("no is arm");
+    }
+    else {
+        // document.write("no is not arm");
+        alert("no is not arm");
+    }
+</script>
+
+</html>

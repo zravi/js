@@ -1,0 +1,28 @@
+<script>
+    // Math.pow function
+    // var a = 4;
+    // var apow = Math.pow(a, 2); // We need to store it in an varible than we will be use it 
+    // document.write("a power = " + apow + "<br>");
+
+    // var bn = prompt();
+    // var bnpow = Math.pow(bn, 3);
+    // document.write("a power = " + bnpow + "<br>");
+    // Check a number is armstrong or not
+
+    // var no = prompt("Write a number ");
+    var no = 153;
+    document.write("No = " + no + "<br>");
+    var sum = 0;
+    var temp = no;
+    while (no != 0) {
+        let ld = no % 10; // parseInt for get values in int form 
+        sum = (sum * 10) + ld; // 
+        no = parseInt(no / 10);
+    }
+    if (temp == sum) {
+        document.write(temp + " is palindrome" + "<br>");
+    }
+    else {
+        document.write(temp + " is not palindrome" + "<br>");
+    }
+</script>

@@ -1,0 +1,42 @@
+<script>
+
+    var ar = [10, 20, 30, 40, 50];
+    // This is an array including objects
+    var details = [{
+        name: "ravi ya",
+        tech: "MERN",
+        class: "3 to 4",
+        contact: // object inside object
+        {
+            mobile: "*3700104785"
+        }
+    }, // 2nd object at 2nd index 
+    {
+        name: "fname lname",
+        tech: "Java",
+        class: "12 to 1",
+    },
+    {
+        name: "hell fire",
+        tech: "MERN",
+        class: "4 to 5",
+    }
+    ];
+
+    document.write(details + "<br><br>");
+    var detailsJSON = JSON.stringify(details);
+    document.write(detailsJSON + "<br>");
+
+    // document.write(detailsJSON + "<br>");
+    document.write("<h1>Array elements loop access : for-in</h1>");
+    // For in mostly used in objects --> is a key and value pair ex. -> name : "Nirnjan" 
+    for (let i in ar) {
+        document.write(i + "---->" + ar[i] + "<br>");
+    }
+
+    // For of mostly used in array -> is only value pair ex. -> "Nirnjan" 
+    document.write("<h1>Array elements loop access : for-of</h1>");
+    for (let x of ar) {
+        document.write(x + "<br>");
+    }
+</script>

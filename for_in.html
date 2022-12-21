@@ -1,0 +1,17 @@
+<script>
+    var array = [1, 256, 34, 456, 235, 26, 7, 8, 9, 10];
+    document.write("Array Elements : <br>");
+    for (let i in array) {
+        document.write(array[i] + "<br>");
+    }
+
+    var len = array.length;
+    var half = parseInt(array.length / 2);
+    for (let i = 0, j = len - 1; i < half; i++, j--) {
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    document.write(array + "<br>");
+
+</script>

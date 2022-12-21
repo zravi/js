@@ -1,0 +1,14 @@
+<script>
+    var no = 8, flag = 1;
+
+    for (let i = 2; i < no; i++) {
+        if (no % i == 0) {
+            document.write("<h1>Number is not prime </h1>");
+            flag = 0;
+            break;
+        }
+        if (flag == 1) {
+            document.write("<h1>Number is prime </h1>");
+        }
+    }
+</script>

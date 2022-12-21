@@ -1,0 +1,21 @@
+<script>
+    var arr=[10,20,30,40,50,60,70];
+    var rev;
+document.write("Array elements are : ");
+    for(let i = 0;i<arr.length;i++){
+        document.write(arr[i]+"\t");
+    }
+    var lng = arr.length/2;
+    var temp;
+    document.write("<br>Array in reverse format : ");
+    for (let i = 0; i < lng; i++) {
+        temp=arr[i];
+        arr[i]=arr[lng-1-i];
+        arr[lng - 1 - i]=temp;
+    }
+    
+    for(let i=0;i<arr.length;i++){
+        document.write(arr[i]+"\t");
+    }
+
+</script>

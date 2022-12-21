@@ -1,0 +1,24 @@
+<script>
+    /*
+        JS hoisting : variables can be declared any where in JS , as at the the time usage if variable is not declared it search for declaration in entire scope. 
+        It is a mechanism to used parameter without declaration.
+    */
+
+    a = 45;  // Without declaring variables  
+    b = 45.45;
+    c = a + b;
+    document.write("<p>Value of a = " + a + "</p>");
+    document.write("Value of b = " + b + "</p>");
+    document.write("Addition = " + parseInt(c) + "<br>");
+    document.write("Addition = " + parseFloat(c) + "<br>");
+    var a, b, c;
+
+    var a = 34454.34, b = 4545;
+    c = a + b;
+    document.write("<p>Value of a = " + a + "</p>");
+    document.write("Value of b = " + b + "</p>");
+    document.write("Addition = " + parseInt(c) + "<br>");
+    document.write("Addition = " + parseFloat(c) + "<br>");
+
+    // declaring variables here is the example of hoisting
+</script>

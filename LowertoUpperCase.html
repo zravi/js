@@ -1,0 +1,23 @@
+<script>
+    // Convert A to a
+    // var char = 'N';
+    var char = "Nirnjan Patel";
+    var l = char.toLowerCase();
+    document.write(l + "<br>");
+    var u = char.toUpperCase();
+    document.write(u + "<br>");
+
+    document.write("Before Transform : " + char + "<br>");
+
+    var charascii = char.charCodeAt();
+    document.write(charascii + "<br>");
+    if (charascii >= 65 && charascii <= 90) {
+        charascii += 32;
+    }
+    var char = String.fromCharCode(charascii);
+
+    document.write("After Transform : " + char + "<br>");
+    document.write(charascii);
+
+
+</script>

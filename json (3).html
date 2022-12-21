@@ -1,0 +1,24 @@
+<script>
+/*
+what is the need of JSON Object to String form 
+stringify() method in Javascript is used to create a JSON string out of it. 
+While developing an application using JavaScript, many times it is needed to serialize the data to strings for storing the data into a database or for sending the data to an API or web server.
+The data has to be in the form of strings.
+*/    
+var empDetails=[
+    {"eno":1001,"enm":"Jarvis","esal":1000.56},
+    {"eno":1002,"enm":"Jany","esal":2000.51},
+    {"eno":1003,"enm":"John","esal":3000.76}];
+
+    document.write("empDetails : "+empDetails+"<br>");
+    document.write("typeof empDetails : "+typeof empDetails+"<br><br>");
+
+    empDetails_json=JSON.stringify(empDetails);
+    document.write("empDetails json : "+empDetails_json+"<br>");
+    document.write("typeof empDetails : "+typeof empDetails_json+"<br><br>");
+
+    empDetails_obj=JSON.parse(empDetails_json);
+    document.write("empDetails obj : "+empDetails_obj+"<br>");
+    document.write("typeof empDetails : "+typeof empDetails_obj+"<br><br>");
+
+</script>

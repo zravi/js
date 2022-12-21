@@ -1,0 +1,57 @@
+<script>
+
+    function Fruit(color, taste, seeds) {
+        this.color = color;
+        this.taste = taste;
+        this.seeds = seeds;
+    }
+
+    // Create an object
+    const fruit1 = new Fruit('Yellow', 'Sweet', 1);
+
+    // Display the result
+    document.write(fruit1 + "<br>");
+    document.write(JSON.stringify(fruit1) + "<br>");
+    var jsonForm = JSON.stringify(fruit1);
+    document.write("jsonForm = " + jsonForm + "<br>");
+    var objectForm = JSON.parse(jsonForm);
+    document.write("objectForm = " + objectForm);
+
+
+    document.write(fruit1.color + "<br>");
+    document.write(fruit1.taste + "<br>");
+    document.write(fruit1.seeds + "<br>");
+
+    // function newEx(nm, ad) {
+    //     document.write("Name = " + nm + "<br>");
+    //     document.write("Address" + ad + "<br><br>");
+    //     return nm + ad;
+    // }
+    // var name = "Nirnjan";
+    // var address = "Veena Nagar";
+    // const details = newEx(name, address);
+
+    // document.write("Details = " + details + "<br>");
+
+    // document.write("Details = " + details + "<br>");
+
+
+    // Creating object to a function
+
+
+    function newEx(nm, ad) {
+        document.write("Name = " + nm + "<br>");
+        document.write("Address" + ad + "<br><br>");
+        this.nm = nm;
+        this.ad = ad;
+        return nm + ad;
+    }
+    var name = "Nirnjan";
+    var address = "Veena Nagar";
+    const details = new newEx(name, address);
+
+    document.write("Details = " + details + "<br>");
+    document.write("Details = " + details.nm + "<br>");
+    document.write("Details = " + details.ad + "<br>");
+
+</script>

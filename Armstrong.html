@@ -1,0 +1,17 @@
+<script>
+    // WAP to check a 3-digit number is armstrong or not
+    var no = 153;
+    var sum = 0;
+    var temp = no;
+    while (no > 0) {
+        var ld = no % 10;
+        sum = sum + (ld * ld * ld);
+        no = parseInt(no / 10);
+    }
+    if (temp == sum) {
+        document.write("No is Armstrong<br />");
+    }
+    else {
+        document.write("No is not Armstrong<br />");
+    }
+</script>

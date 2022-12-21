@@ -1,0 +1,40 @@
+<script>
+    var arr = [1, 256, 34, 456, 235, 26, 7, 8, 9, 10];
+    document.write("Array Elements : <br>");
+    for (let i in arr) {
+        document.write(arr[i] + "\t");
+    }
+    document.write("<br>");
+    document.write("<br>");
+    
+    // Ascending order
+    document.write("Array Elements in ascending order : <br>");
+    for (let i in arr) {
+        for (let j = i; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        document.write(arr[i] + " ");
+    }
+    document.write("<br>");
+    document.write("<br>");
+    
+    // Descending order
+    document.write("Array Elements in descending order : <br>");
+    for (let i in arr) {
+        for (let j = i; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        document.write(arr[i] + " ");
+    }
+
+
+
+</script>

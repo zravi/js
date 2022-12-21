@@ -1,0 +1,24 @@
+<script>
+    // var for local scope for function and block
+    var a = 23;
+    let b = "String";
+    document.write("a in Global = " + a + "<br>");
+    document.write("b in Global = " + a + "<br>");
+    document.write("Typeof a is : " + typeof a + "<br>");
+    function varScope() { // Default function
+        var a = 45;
+        document.write("a in function= " + a + "<br>");
+        document.write("Default function Called...!!!<br>");
+    }
+    varScope(); // Calling Default function
+    document.write("a in Global = " + a + "<br>");
+    // variable or function
+    const const_variable = function () {
+        const a = 45, b = 45;
+        document.write("a with const = " + a + "<br>");
+        document.write("b with const = " + b + "<br>");
+        document.write("a + b = " + (a + b) + "<br>");
+        document.write("Variable function Called...!!!<br>");
+    }
+    const_variable();  // Calling variable function
+</script>

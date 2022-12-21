@@ -1,0 +1,12 @@
+<script>
+    function Greater(a, b, c, d) {
+        var res = (a > b && a > c && a > d) ? 'a' : ((b > c && b > d) ? 'b' : ((c > d) ? 'c' : d))
+        return res;
+    }
+
+    var a = 45, b = 67, c = 34, d = 3897;
+    var greater = Greater(a, b, c, d);
+    document.write("greater " + greater + "<br>");
+
+
+</script>

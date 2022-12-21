@@ -1,0 +1,25 @@
+<script>
+    // WAP to search element inside array
+
+    var ar = [10, 20, 30, 40, 50, 60, 30, 80, 90, 30];
+
+    var n = 30;
+    var flag = 1;
+
+    for (let i in ar) {
+        if (ar[i] == n) {
+            document.write("<h1>Element found at index " + i + "</h1>");
+            document.write(ar[i] + "<br>");
+            flag = 0;
+        }
+        }
+
+    if (flag)
+    document.write("<h1>Element not found</h1>");
+
+    // var ar1 = [no1 = 10, no2 = 10, no3 = 10, no4 = 10, no5 = 10, no6 = 10, no7 = 10, no8 = 10, no9 = 10,];
+    // document.write("For of function : <br>");
+    // for (let i in ar1) {
+    //     document.write(ar1[i] + "<br>");
+    // }
+</script>

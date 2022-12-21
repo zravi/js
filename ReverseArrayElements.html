@@ -1,0 +1,21 @@
+<script>
+    // Reverse array elements
+    var arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+    document.write("Array Elements Are: ");
+
+    var n = arr.length;
+    var s = parseInt(arr.length / 2);
+
+    for (let i = 0, j = n - 1; i < s; i++, j--) {
+        document.write(arr[i] + "<br>");
+    }
+    document.write("Array Elements in reverse form : ");
+
+    for (let i = 0, j = n - 1; i < s; i++, j--) {
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+
+    }
+    document.write(arr + "<br>");
+</script>

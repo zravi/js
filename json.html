@@ -1,0 +1,25 @@
+<script>
+    var empDetails = [
+        { "eno": 1001, "enm": "Jarvis", "esal": 1000.56 }, 
+        { "eno": 1002, "enm": "Jany", "esal": 2000.51 }, 
+        { "eno": 1003, "enm": "John", "esal": 3000.76 }];
+
+    document.write("empDetails : " + empDetails + "<br>");
+    document.write("typeof empDetails : " + typeof empDetails + "<br><br>");
+
+    empDetails_json = JSON.stringify(empDetails);
+    document.write("empDetails json : " + empDetails_json + "<br>");
+    document.write("typeof empDetails : " + typeof empDetails_json + "<br><br>");
+    
+    document.write("eno : " + empDetails[0].eno + "<br>");
+    document.write("enm : " + empDetails[0].enm + "<br>");
+    document.write("esal : " + empDetails[0].esal + "<br>");
+    document.write("<br><br>");
+
+    for(let i in empDetails){
+        for(let key in empDetails[i]){
+        document.write(key + " ----> "+empDetails[i][key] + "<br>");
+    }
+    document.write("<br>");
+}
+</script>
